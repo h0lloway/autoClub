@@ -1,0 +1,175 @@
+ <header class="header" id="header">
+   <div class="header__wrapper">
+     <div class="container">
+       <ul class="header__list">
+         <li class="header__list-item">
+           <span class="header__list-location">
+             202 W 7TH ST, LOS ANGELES, CA 90014
+           </span>
+         </li>
+         <li class="header__list-item">
+           <div class="header__list-wrapper">
+             <input class="header__list-input" type="text" placeholder="VIN или № лота ...">
+             <button class="header__list-btn">SEArch</button>
+           </div>
+         </li>
+         <li class="header__list-item">
+           <p class="header__list-link header__list-link--sign-in">sign in</p>
+           <p class="header__list-link header__list-link--register">register</p>
+         </li>
+         <li class="header__list-item header__list-item-language">
+           <p class="header__list-text header__list-language">
+             LANGuAGE
+           </p>
+           <strong class="header__list-text header__list-language2 header__list-text--strong">
+             En
+           </strong>
+         </li>
+         <div class="language">
+           <ul class="language__list">
+             <li class="language__item">
+               <a href="/index.html" class="language__link">EN</a>
+             </li>
+             <li class="language__item">
+               <a href="/homeES.html" class="language__link language__link--es">ES</a>
+             </li>
+           </ul>
+         </div>
+       </ul>
+     </div>
+   </div>
+   <div class="container">
+     <nav class="menu">
+       <div class="menu__wrapper">
+         <div class="menu__item menu__item-logo">
+           <a href="#" class="logo">
+             <img src="images/logo/logo.png" alt="логотип" class="logo__img">
+             <div class="logo__list">
+               <strong class="logo__strong logo__strong--auto">auto</strong>
+               <strong class="logo__strong logo__strong--club">CluB</strong></div>
+             <p class="logo__text">
+               AUTO DEALER TEMPLATE
+             </p>
+           </a>
+         </div>
+         <div class="menu__list-wrapper">
+           <ul class="menu__list">
+             <li class="menu__item menu__item--active">
+               <a href="#" class="menu__link">HOME</a>
+             </li>
+             <li class="menu__item menu__item--active">
+               <a href="#" class="menu__link">Grid</a>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">compare</a>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">About</a>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">Services</a>
+             </li>
+             <li class="menu__item menu__item--active">
+               <a href="#" class="menu__link menu__link--hover">Blog</a>
+
+               <ul class="header__menu-hover">
+                 <ul class="header__menu-hover-list">
+                   <li class="header__menu-hover-item">
+                     <a href="#" class="header__menu-hover-link">BlOG 1</a>
+                   </li>
+                   <li class="header__menu-hover-item">
+                     <a href="#" class="header__menu-hover-link">BlOG 2</a>
+                   </li>
+                 </ul>
+               </ul>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">Shop</a>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">Contact</a>
+             </li>
+           </ul>
+           <div class="menu__open">
+             <span class="menu__open-line"></span>
+           </div>
+         </div>
+       </div>
+     </nav>
+   </div>
+ </header>
+ <div class="modal-reg">
+   <div class="modal">
+     <div class="modal__wrapper">
+       <span class="modal__close modal__close-reg"></span>
+       <div class="modal__name">
+         <span class="modal__login">
+           Login
+         </span>
+         <span class="modal__register">
+           Register
+         </span>
+       </div>
+       <h3 class="modal__title">
+         Register
+       </h3>
+       <label class="modal__email-label" for="email">Email Adress:</label>
+       <input class="modal__email-input" type="text" name="email" id="email">
+       <label class="modal__password-label" for="password">Password:</label>
+       <input class="modal__password-input" type="text" name="password" id="password">
+       <label class="modal__password-rep-label" for="password-rep">Repeat Password:</label>
+       <input class="modal__password-rep-input" type="text" name="password-rep" id="password-rep">
+       <button class="modal__btn">Register</button>
+     </div>
+   </div>
+ </div>
+ <div class="modal-log">
+   <div class="modal">
+     <div class="modal__wrapper">
+       <span class="modal__close modal__close-log"></span>
+       <div class="modal__name">
+         <span class="modal__login modal__login1">
+           Login
+         </span>
+         <span class="modal__register modal__register1">
+           Register
+         </span>
+       </div>
+       <h3 class="modal__title">
+         Login
+       </h3>
+       <label class="modal__email-label" for="email">Username or Email Adress:</label>
+       <input class="modal__email-input" type="text" name="email" id="email">
+       <label class="modal__password-label" for="password">Password:</label>
+       <input class="modal__password-input" type="text" name="password" id="password">
+       <button class="modal__btn modal__btn1">Login</button>
+       <div class="modal__checbox-wrapper">
+         <input type="checkbox" class="modal__checkbox" name="rem">
+         <label for="rem">Remember Me</label>
+       </div>
+       <span class="modal__link">
+         Lost Your Password
+       </span>
+     </div>
+   </div>
+ </div>
+
+ <div class="modal-rem">
+   <div class="modal">
+     <div class="modal__wrapper">
+       <span class="modal__close modal__close-rem"></span>
+       <h3 class="modal__title">
+         Remember password
+       </h3>
+       <label class="modal__email-label" for="email">Username or Email Adress:</label>
+       <input class="modal__email-input" type="text" name="email" id="email">
+       <button class="modal__btn modal__btn2">Remember</button>
+       <span class="modal__link modal__link2">
+         Sign in
+       </span>
+     </div>
+   </div>
+ </div>
+ <div class="to-top__wrapper">
+   <a href="#header" class="to-top"></a>
+ </div>

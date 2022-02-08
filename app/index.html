@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans:wght@700&family=Titillium+Web:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title></title>
+</head>
+
+<body class="body">
+  <header class="header" id="header">
+   <div class="header__wrapper">
+     <div class="container">
+       <ul class="header__list">
+         <li class="header__list-item">
+           <span class="header__list-location">
+             202 W 7TH ST, LOS ANGELES, CA 90014
+           </span>
+         </li>
+         <li class="header__list-item">
+           <div class="header__list-wrapper">
+             <input class="header__list-input" type="text" placeholder="VIN или № лота ...">
+             <button class="header__list-btn">SEArch</button>
+           </div>
+         </li>
+         <li class="header__list-item">
+           <p class="header__list-link header__list-link--sign-in">sign in</p>
+           <p class="header__list-link header__list-link--register">register</p>
+         </li>
+         <li class="header__list-item header__list-item-language">
+           <p class="header__list-text header__list-language">
+             LANGuAGE
+           </p>
+           <strong class="header__list-text header__list-language2 header__list-text--strong">
+             En
+           </strong>
+         </li>
+         <div class="language">
+           <ul class="language__list">
+             <li class="language__item">
+               <a href="/index.html" class="language__link">EN</a>
+             </li>
+             <li class="language__item">
+               <a href="/homeES.html" class="language__link language__link--es">ES</a>
+             </li>
+           </ul>
+         </div>
+       </ul>
+     </div>
+   </div>
+   <div class="container">
+     <nav class="menu">
+       <div class="menu__wrapper">
+         <div class="menu__item menu__item-logo">
+           <a href="#" class="logo">
+             <img src="images/logo/logo.png" alt="логотип" class="logo__img">
+             <div class="logo__list">
+               <strong class="logo__strong logo__strong--auto">auto</strong>
+               <strong class="logo__strong logo__strong--club">CluB</strong></div>
+             <p class="logo__text">
+               AUTO DEALER TEMPLATE
+             </p>
+           </a>
+         </div>
+         <div class="menu__list-wrapper">
+           <ul class="menu__list">
+             <li class="menu__item menu__item--active">
+               <a href="index.html" target="_blank" class="menu__link">HOME</a>
+             </li>
+             <li class="menu__item menu__item--active">
+              <a href="payment.html" target="_blank" class="menu__link">Grid</a>
+             </li>
+             <li class="menu__item">
+               <a href="profile.html" target="_blank" class="menu__link">compare</a>
+             </li>
+             <li class="menu__item">
+               <a href="vin-reports.html" target="_blank"  class="menu__link">About</a>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">Services</a>
+             </li>
+             <li class="menu__item menu__item--active">
+               <a href="#" class="menu__link menu__link--hover">Blog</a>
+
+               <ul class="header__menu-hover">
+                 <ul class="header__menu-hover-list">
+                   <li class="header__menu-hover-item">
+                     <a href="#" class="header__menu-hover-link">BlOG 1</a>
+                   </li>
+                   <li class="header__menu-hover-item">
+                     <a href="#" class="header__menu-hover-link">BlOG 2</a>
+                   </li>
+                 </ul>
+               </ul>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">Shop</a>
+             </li>
+             <li class="menu__item">
+               <a href="#" class="menu__link">Contact</a>
+             </li>
+           </ul>
+           <div class="menu__open">
+             <span class="menu__open-line"></span>
+           </div>
+         </div>
+       </div>
+     </nav>
+   </div>
+ </header>
+ <div class="modal-reg">
+   <div class="modal">
+     <div class="modal__wrapper">
+       <span class="modal__close modal__close-reg"></span>
+       <div class="modal__name">
+         <span class="modal__login">
+           Login
+         </span>
+         <span class="modal__register">
+           Register
+         </span>
+       </div>
+       <h3 class="modal__title">
+         Register
+       </h3>
+       <label class="modal__email-label" for="email">Email Adress:</label>
+       <input class="modal__email-input" type="text" name="email" id="email">
+       <label class="modal__password-label" for="password">Password:</label>
+       <input class="modal__password-input" type="text" name="password" id="password">
+       <label class="modal__password-rep-label" for="password-rep">Repeat Password:</label>
+       <input class="modal__password-rep-input" type="text" name="password-rep" id="password-rep">
+       <button class="modal__btn">Register</button>
+     </div>
+   </div>
+ </div>
+ <div class="modal-log">
+   <div class="modal">
+     <div class="modal__wrapper">
+       <span class="modal__close modal__close-log"></span>
+       <div class="modal__name">
+         <span class="modal__login modal__login1">
+           Login
+         </span>
+         <span class="modal__register modal__register1">
+           Register
+         </span>
+       </div>
+       <h3 class="modal__title">
+         Login
+       </h3>
+       <label class="modal__email-label" for="email">Username or Email Adress:</label>
+       <input class="modal__email-input" type="text" name="email" id="email">
+       <label class="modal__password-label" for="password">Password:</label>
+       <input class="modal__password-input" type="text" name="password" id="password">
+       <button class="modal__btn modal__btn1">Login</button>
+       <div class="modal__checbox-wrapper">
+         <input type="checkbox" class="modal__checkbox" name="rem">
+         <label for="rem">Remember Me</label>
+       </div>
+       <span class="modal__link">
+         Lost Your Password
+       </span>
+     </div>
+   </div>
+ </div>
+
+ <div class="modal-rem">
+   <div class="modal">
+     <div class="modal__wrapper">
+       <span class="modal__close modal__close-rem"></span>
+       <h3 class="modal__title">
+         Remember password
+       </h3>
+       <label class="modal__email-label" for="email">Username or Email Adress:</label>
+       <input class="modal__email-input" type="text" name="email" id="email">
+       <button class="modal__btn modal__btn2">Remember</button>
+       <span class="modal__link modal__link2">
+         Sign in
+       </span>
+     </div>
+   </div>
+ </div>
+ <div class="to-top__wrapper">
+   <a href="#header" class="to-top"></a>
+ </div>
+
+  <main class="main">
+    <section class="bg"></section>
+
+<section class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Blog Style 2</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="listingstwo">
+  <div class="container">
+    <div class="listingstwo__wrapper">
+      <article class="filters">
+        <h3 class="filters__title">REFINE YOUR SEARCH</h3>
+        <div class="filters__wrapper">
+          <ul class="filters__list">
+            <li class="filters__item">
+              <p class="filters__text">
+                Тип транспортного средства
+              </p>
+              <div class="filters__selector filters__selector1">Все типы</div>
+              <ul class="filters__list-list filters__list-list1">
+                <li class="filters__item-item">
+                  тип 1
+                </li>
+                <li class="filters__item-item">
+                  тип 2
+                </li>
+              </ul>
+            </li>
+            <li class="filters__item">
+              <p class="filters__text">
+                Тип марки
+              </p>
+              <div class="filters__selector filters__selector2">Все марки</div>
+              <ul class="filters__list-list filters__list-list2">
+                <li class="filters__item-item">
+                  тип 1
+                </li>
+                <li class="filters__item-item">
+                  тип 2
+                </li>
+              </ul>
+            </li>
+            <li class="filters__item">
+              <p class="filters__text">
+                Тип модели
+              </p>
+              <div class="filters__selector filters__selector3">Все модели</div>
+              <ul class="filters__list-list filters__list-list3">
+                <li class="filters__item-item">
+                  тип 1
+                </li>
+                <li class="filters__item-item">
+                  тип 2
+                </li>
+              </ul>
+            </li>
+            <li class="filters__item">
+              <p class="filters__text">
+                Год от и до
+              </p>
+              <div class="filters__selector filters__selector4">Все года</div>
+              <ul class="filters__list-list filters__list-list4">
+                <li class="filters__item-item">
+                  2000-2010
+                </li>
+                <li class="filters__item-item">
+                  2010-2020
+                </li>
+              </ul>
+            </li>
+            <li class="filters__item">
+              <p class="filters__text">
+                Выбор аукциона
+              </p>
+              <div class="filters__selector filters__selector5">Все типы</div>
+              <ul class="filters__list-list filters__list-list5">
+                <li class="filters__item-item">
+                  тип 1
+                </li>
+                <li class="filters__item-item">
+                  тип 2
+                </li>
+              </ul>
+            </li>
+            <li class="filters__item">
+              <p class="filters__text">
+                Цена
+              </p>
+              <input placeholder="От" type="text" class="filters__input">
+              <input placeholder="До" type="text" class="filters__input">
+            </li>
+            <li class="filters__item">
+              <p class="filters__text filters__text6">
+                Пробег
+              </p>
+              <input placeholder="От" type="text" class="filters__input">
+              <input placeholder="До" type="text" class="filters__input">
+            </li>
+          </ul>
+        </div>
+        <div class="filters__bottom">
+          <div class="filters__btn-wrap">
+            <button class="filters__btn">
+              FILTER VEHICLES
+            </button>
+          </div>
+          <button class="filters__btn-reset">RESET ALL FILTERS</button>
+        </div>
+        <div class="sell">
+          <div class="sell__top">
+            <h3 class="sell__title">
+              SELL YOUR CAR
+            </h3>
+          </div>
+          <div class="sell__bottom">
+            <p class="sell__bottom-text">
+              Nam tellus enimds eleifend dignis lsim biben edum tristique sed metus fusce Maecenas lobortis.
+            </p>
+            <div class="sell__bottom-wrap">
+              <a href="#" class="sell__bottom-link">REGISTER NOW</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <p class="filters__open">Фильтры</p>
+      <article class="listingstwo__slider">
+        <ul class="listingstwo__list">
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn1">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn2">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--new">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn3">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn4">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--leeasing">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn5">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--prem">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+        </ul>
+        <ul class="listingstwo__list">
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn6">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn7">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--new">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn8">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn9">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--leeasing">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn10">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--prem">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+        </ul>
+        <ul class="listingstwo__list">
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn11">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn12">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--new">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn13">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn14">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--leeasing">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn15">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--prem">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+        </ul>
+        <ul class="listingstwo__list">
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn16">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn17">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--new">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn18">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn19">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--leeasing">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+          <li class="listingstwo__item">
+            <div class="listingstwo__item-wrapper">
+              <h2 class="listingstwo__title">Toyota RAV4 Limited V6</h2>
+              <div class="listingstwo__item-wrap">
+                <div class="listingstwo__item-left">
+                  <div class="listingstwo__item-left-top">
+                    <p class="listingstwo__item-name">
+                      KNDMP3AC2L7740481
+                    </p>
+                    <button class="listingstwo__item-btn listingstwo__item-btn20">BUY VIN REPORT</button>
+                  </div>
+                  <div class="listingstwo__item-left-bottom">
+                    <ul class="listingstwo__item-list1">
+                      <li class="listingstwo__item-list1-item">
+                        Lot #:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        MIleage:
+                      </li>
+                      <li class="listingstwo__item-list1-item">
+                        Transmission:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list2">
+                      <li class="listingstwo__item-list2-item">
+                        Sedan
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        35,000 КМ
+                      </li>
+                      <li class="listingstwo__item-list2-item">
+                        6-speed Auto
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list3">
+                      <li class="listingstwo__item-list3-item">
+                        Engine:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Color:
+                      </li>
+                      <li class="listingstwo__item-list3-item">
+                        Status:
+                      </li>
+                    </ul>
+                    <ul class="listingstwo__item-list4">
+                      <li class="listingstwo__item-list4-item">
+                        DOHC 24-value v-6
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        White
+                      </li>
+                      <li class="listingstwo__item-list4-item">
+                        2-Passenger, 2-Door
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="listingstwo__item-right">
+                  <p class="listingstwo__item-right-text">PRICE:</p>
+                  <strong class="listingstwo__item-right-price">
+                    $29,415
+                  </strong>
+                  <div class="listingstwo__item-right-wrap">
+                    <a href="#" class="listingstwo__item-right-link">VIEWDETAILS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listingstwo__item-img-wrap listingstwo__item-img-wrap--prem">
+              <img src="images/slider/1.jpg" alt="фото машины" class="listingstwo__item-img">
+            </div>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal-pay">
+  <div class="modal-pay__wrapper">
+    <span class="modal-pay__close"></span>
+    <div class="modal-pay__top">
+      <p class="modal-pay__top-text" id="1">
+        PRICE: $3.00 USD
+      </p>
+      <div class="modal-pay__top-wrapper">
+        <div class="modal-pay__top-wrap">
+          <input type="text" class="modal-pay__top-input">
+          <button class="modal-pay__top-btn">
+            CHECK VIN
+          </button>
+        </div>
+        <div class="modal-pay__top-chekboxs">
+          <div class="modal-pay__top-container">
+            <input type="checkbox" class="modal-pay__top-chekbox modal-pay__top-chekbox1" checked>
+            <div class="modal-pay__top-price">
+              <p class="modal-pay__top-price-text">
+                Carfax - $1.5
+              </p>
+              <a href="#" class="modal-pay__top-price-link">
+                example carfax
+              </a>
+            </div>
+          </div>
+          <div class="modal-pay__top-container">
+            <input type="checkbox" class="modal-pay__top-chekbox modal-pay__top-chekbox2" checked>
+            <div class="modal-pay__top-price">
+              <p class="modal-pay__top-price-text">
+                Autocheck - $1.5
+              </p>
+              <a href="#" class="modal-pay__top-price-link">
+                example autocheck
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-pay__bottom">
+      <div class="modal-pay__bottom-left">
+        <div class="modal-pay__logo">
+          <img src="images/slider/1.jpg" alt="fondy" class="modal-pay__logo-img">
+        </div>
+        <p class="modal-pay__text">
+          Payment for VIN reports AutoCheck, CARFAX
+        </p>
+        <label for="card" class="modal-pay__label-card">Card number</label>
+        <input name="card" type="text" class="modal-pay__input-card" placeholder="XXXX XXXX XXXX XXXX">
+        <div class="modal-pay__input-wrapper">
+          <div class="modal-pay__input-wrapper-left">
+            <label for="date" class="modal-pay__label-date">Expiry date</label>
+            <input name="date" type="text" class="modal-pay__input-date" placeholder="MM/YY">
+          </div>
+          <div class="modal-pay__input-wrapper-right">
+            <label for="CVV2" class="modal-pay__label-cvv2">CVV2</label>
+            <input name="CVV2" type="text" class="modal-pay__input-cvv2" placeholder="XXX">
+          </div>
+        </div>
+        <label for="email" class="modal-pay__label-email">Email</label>
+        <input name="email" type="text" class="modal-pay__input-email">
+        <div class="modal-pay__btn-wrap">
+          <button class="modal-pay__btn" type="submit">
+            BUY REPORT
+          </button>
+        </div>
+        <div class="modal-pay__btn-wrapper">
+          <div class="modal-pay__btn-google">
+            <p class="modal-pay__btn-google-text">
+              Pay
+            </p>
+          </div>
+        </div>
+        <ul class="modal-pay__list">
+          <li class="modal-pay__item">
+            <img src="images/slider/1.jpg" alt="" class="modal-pay__img">
+          </li>
+          <li class="modal-pay__item">
+            <img src="images/slider/1.jpg" alt="" class="modal-pay__img">
+          </li>
+          <li class="modal-pay__item">
+            <img src="images/slider/1.jpg" alt="" class="modal-pay__img">
+          </li>
+          <li class="modal-pay__item">
+            <img src="images/slider/1.jpg" alt="" class="modal-pay__img">
+          </li>
+        </ul>
+      </div>
+      <div class="modal-pay__bottom-right">
+        <div class="modal-pay__bottom-right-price">
+          PRICE:
+          <strong id="2"> $3.00 USD</strong>
+        </div>
+        <div class="modal-pay__bottom-right-vin">
+          Vin:
+          <p>3bbdgb32gebdbd</p>
+        </div>
+        <div class="modal-pay__bottom-right-auto">
+          Auto:
+          <p>TOYOTA YARIS L/LE/XLE 2020</p>
+        </div>
+        <div class="modal-pay__bottom-right-entry">
+          Entry:
+          <p>20</p>
+        </div>
+        <p class="modal-pay__bottom-text">
+          After payment Vin reports for Vin 19UGGFSF423DGGF4238 will be available in the VIN reports area of your
+          backoffice and in send in your email
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-top__wrapper">
+        <p class="footer-top__text">Low Prices, No Haggling</p>
+        <p class="footer-top__text">Largest Car Dealership</p>
+        <p class="footer-top__text">Multipoint Safety Check</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-center">
+    <div class="container container--footer">
+      <ul class="footer-center__list">
+        <li class="footer-center__item">
+          <h3 class="footer-center__title">LATEST AUTOS</h3>
+          <ul class="footer-center__list-list">
+            <li class="footer-center__item-item">
+              <img class="footer-center__item-img" src="images/slider/1.jpg" alt="фото машины">
+              <div class="footer-center__item-wrapper">
+                <a class="footer-center__item-text" href="#">
+                  MERCEDES-AMG GT S
+                </a>
+                <p class="footer-center__item-speed">
+                  35,000 KM
+                </p>
+              </div>
+            </li>
+            <li class="footer-center__item-item">
+              <img class="footer-center__item-img" src="images/slider/1.jpg" alt="фото машины">
+              <div class="footer-center__item-wrapper">
+                <a class="footer-center__item-text" href="#">
+                  AUDI R8 SPYDER V-8
+                </a>
+                <p class="footer-center__item-speed">
+                  35,000 KM
+                </p>
+              </div>
+            </li>
+            <li class="footer-center__item-item footer-center__item-item--last">
+              <img class="footer-center__item-img" src="images/slider/2.jpg" alt="фото машины">
+              <div class="footer-center__item-wrapper">
+                <a class="footer-center__item-text" href="#">
+                  ASTON MARTIN VANTAGE
+                </a>
+                <p class="footer-center__item-speed">
+                  35,000 KM
+                </p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-center__item">
+          <h3 class="footer-center__title">FROM TWITTER</h3>
+          <ul class="footer-center__list-list">
+            <li class="footer-center__item-item2">
+              <p class="footer-center__item-twitter-text">Duis scelerisque aliquet ante donec libero pede porttitor dacu
+              </p>
+              <p class="footer-center__item-twitter-time">20 minutes ago</p>
+            </li>
+            <li class="footer-center__item-item2">
+              <p class="footer-center__item-twitter-text">Duis scelerisque aliquet ante donec libero pede
+                porttitor dacu
+              </p>
+              <p class="footer-center__item-twitter-time">20 minutes ago</p>
+            </li>
+            <li class="footer-center__item-item2 footer-center__item-item2--last">
+              <p class="footer-center__item-twitter-text">Duis scelerisque aliquet ante donec
+                libero pede porttitor dacu
+              </p>
+              <p class="footer-center__item-twitter-time">20 minutes ago</p>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-center__item footer-center__item--big">
+          <h3 class="footer-center__title">CONTACT US</h3>
+          <p class="footer-center__item-info footer-center__item-info1">
+            202 W 7th St, Suite 233 Los Angeles, California 90014 USA</p>
+          <a class="footer-center__item-info footer-center__item-info2" href="#">
+            Phone: 1-800- 624-5462</a>
+          <p class="footer-center__item-info footer-center__item-info3">
+            FAX: 1-800- 624-5462</p>
+          <a class="footer-center__item-info footer-center__item-info4" href="#">
+            Email: info@domain.com
+          </a>
+          <img class="footer-center__item-info-img" src="images/slider/1.jpg" alt="фото">
+        </li>
+      </ul>
+    </div>
+    <div class="container container--footer">
+      <aside class="footer-aside">
+        <div class="footer-aside__wrapper">
+          <ul class="footer-aside__list">
+            <li class="footer-aside__item">
+              <p class="footer-aside__item-title">OPENING HOURS</p>
+              <p class="footer-aside__item-subtitle">Sales Department</p>
+              <p class="footer-aside__item-text">Mon-Sat : 8:00am - 5:00pm
+                <br>
+                Sunday is closed
+              </p>
+              <p class="footer-aside__item-subtitle">Service Department</p>
+              <p class="footer-aside__item-text">Mon-Sat : 8:00am - 5:00pm
+                <br>
+                Sunday is closed
+              </p>
+            </li>
+            <li class="footer-aside__item">
+              <p class="footer-aside__item-title">ABOUT US</p>
+              <p class="footer-aside__item-text">
+                Vestibulum varius od lio eget conseq uat blandit, lorem auglue comm lodo nisl non ultricies lectus nibh
+                mas lsa Duis scelerisque aliquet. Ante donec libero pede porttitor dacu msan esct venenatis quis.
+              </p>
+              <div class="footer-aside__item-wrap">
+                <a href="#" class="footer-aside__item-link">Read more</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__wrapper">
+        <div class="footer-bottom__left">
+          <a href="#" class="logo">
+            <img src="images/logo/logoF.png" alt="логотип" class="logo__img">
+            <div class="logo__list">
+              <strong class="logo__strong logo__strong--auto">auto</strong>
+              <strong class="logo__strong logo__strong--club">CluB</strong>
+            </div>
+          </a>
+        </div>
+        <div class="footer-bottom__right">
+          <div class="footer-bottom__right-list-soc">
+            <a href="#" class="footer-bottom__right-link">
+              <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="facebook">
+            </a>
+            <a href="#" class="footer-bottom__right-link">
+              <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="twitter">
+            </a>
+            <a href="#" class="footer-bottom__right-link">
+              <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="google">
+            </a>
+            <a href="#" class="footer-bottom__right-link">
+              <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="instagram">
+            </a>
+            <a href="#" class="footer-bottom__right-link">
+              <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="youtube">
+            </a>
+            <a href="#" class="footer-bottom__right-link">
+              <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="skype">
+            </a>
+          </div>
+          <nav class="footer-bottom__right-list">
+            <a href="#" class="footer-bottom__right-text">
+              Home
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              Pages
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              Inventory
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              About
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              Services
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              Blog
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              Shop
+            </a>
+            <a href="#" class="footer-bottom__right-text">
+              Contact
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

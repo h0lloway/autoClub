@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans:wght@700&family=Titillium+Web:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title></title>
+</head>
+
+<body class="body">
+  <header class="header" id="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <span class="header__list-location">
+              202 W 7TH ST, LOS ANGELES, CA 90014
+            </span>
+          </li>
+          <li class="header__list-item">
+            <div class="header__list-wrapper">
+              <input class="header__list-input" type="text" placeholder="VIN или № лота ...">
+              <button class="header__list-btn">SEArch</button>
+            </div>
+          </li>
+          <li class="header__list-item">
+            <p class="header__list-link header__list-link--sign-in">sign in</p>
+            <p class="header__list-link header__list-link--register">register</p>
+          </li>
+          <li class="header__list-item header__list-item-language">
+            <p class="header__list-text header__list-language">
+              LANGuAGE
+            </p>
+            <strong class="header__list-text header__list-language2 header__list-text--strong">
+              En
+            </strong>
+          </li>
+          <div class="language">
+            <ul class="language__list">
+              <li class="language__item">
+                <a href="/index.html" class="language__link">EN</a>
+              </li>
+              <li class="language__item">
+                <a href="/homeES.html" class="language__link language__link--es">ES</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="menu">
+        <div class="menu__wrapper">
+          <div class="menu__item menu__item-logo">
+            <a href="#" class="logo">
+              <img src="images/logo/logo.png" alt="логотип" class="logo__img">
+              <div class="logo__list">
+                <strong class="logo__strong logo__strong--auto">auto</strong>
+                <strong class="logo__strong logo__strong--club">CluB</strong>
+              </div>
+              <p class="logo__text">
+                AUTO DEALER TEMPLATE
+              </p>
+            </a>
+          </div>
+          <div class="menu__list-wrapper">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="index.html" target="_blank" class="menu__link">HOME</a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a href="profile.html" target="_blank" class="menu__link">Grid</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">compare</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Services</a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link menu__link--hover">Blog</a>
+
+                <ul class="header__menu-hover">
+                  <ul class="header__menu-hover-list">
+                    <li class="header__menu-hover-item">
+                      <a href="#" class="header__menu-hover-link">BlOG 1</a>
+                    </li>
+                    <li class="header__menu-hover-item">
+                      <a href="#" class="header__menu-hover-link">BlOG 2</a>
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Shop</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+            </ul>
+            <div class="menu__open">
+              <span class="menu__open-line"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="modal-reg">
+    <div class="modal">
+      <div class="modal__wrapper">
+        <span class="modal__close modal__close-reg"></span>
+        <div class="modal__name">
+          <span class="modal__login">
+            Login
+          </span>
+          <span class="modal__register">
+            Register
+          </span>
+        </div>
+        <h3 class="modal__title">
+          Register
+        </h3>
+        <label class="modal__email-label" for="email">Email Adress:</label>
+        <input class="modal__email-input" type="text" name="email" id="email">
+        <label class="modal__password-label" for="password">Password:</label>
+        <input class="modal__password-input" type="text" name="password" id="password">
+        <label class="modal__password-rep-label" for="password-rep">Repeat Password:</label>
+        <input class="modal__password-rep-input" type="text" name="password-rep" id="password-rep">
+        <button class="modal__btn">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-log">
+    <div class="modal">
+      <div class="modal__wrapper">
+        <span class="modal__close modal__close-log"></span>
+        <div class="modal__name">
+          <span class="modal__login modal__login1">
+            Login
+          </span>
+          <span class="modal__register modal__register1">
+            Register
+          </span>
+        </div>
+        <h3 class="modal__title">
+          Login
+        </h3>
+        <label class="modal__email-label" for="email">Username or Email Adress:</label>
+        <input class="modal__email-input" type="text" name="email" id="email">
+        <label class="modal__password-label" for="password">Password:</label>
+        <input class="modal__password-input" type="text" name="password" id="password">
+        <button class="modal__btn modal__btn1">Login</button>
+        <div class="modal__checbox-wrapper">
+          <input type="checkbox" class="modal__checkbox" name="rem">
+          <label for="rem">Remember Me</label>
+        </div>
+        <span class="modal__link">
+          Lost Your Password
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-rem">
+    <div class="modal">
+      <div class="modal__wrapper">
+        <span class="modal__close modal__close-rem"></span>
+        <h3 class="modal__title">
+          Remember password
+        </h3>
+        <label class="modal__email-label" for="email">Username or Email Adress:</label>
+        <input class="modal__email-input" type="text" name="email" id="email">
+        <button class="modal__btn modal__btn2">Remember</button>
+        <span class="modal__link modal__link2">
+          Sign in
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="to-top__wrapper">
+    <a href="#header" class="to-top"></a>
+  </div>
+
+  <main class="main">
+    <section class="bg"></section>
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Vin reports</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="profile vin-reports">
+      <div class="container profile__container vin-reports__container">
+        <div class="profile__content vin-reports__content">
+          <div class="profile__content-left vin-reports__content-left">
+
+            <ul class="profile__list vin-reports__list">
+
+
+              <li class="profile__list-item active-item vin-reports__list-item">
+                <div class="list-item-wrap active-item-wrap">
+                  <div class="list-item-img">
+                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                        fill="white" />
+                    </svg>
+
+                  </div>
+                  <div class="list-item-descr">
+                    <h4 class="list-item-title">
+                      Profile
+                    </h4>
+                    <p class="list-item-text">
+                      Edit your profile
+                    </p>
+                    <div class="triangle"></div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="profile__list-item active-item vin-reports__list-item">
+                <div class="list-item-wrap active-item-wrap">
+                  <div class="list-item-img">
+                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                        fill="white" />
+                    </svg>
+
+                  </div>
+                  <div class="list-item-descr">
+                    <h4 class="list-item-title">
+                      Vin reports
+                    </h4>
+                    <p class="list-item-text">
+                      View your VIN reports
+                    </p>
+                    <div class="triangle"></div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="profile__list-item vin-reports__list-item">
+                <div class="list-item-wrap ">
+                  <div class="list-item-img">
+                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                        fill="white" />
+                    </svg>
+
+                  </div>
+                  <div class="list-item-descr">
+                    <h4 class="list-item-title">
+                      About vin
+                    </h4>
+                    <p class="list-item-text">
+                      About your vin
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+          <div class="profile__content-right vin-reports__content-right">
+            <div class="profile__enter-pc vin-reports__enter-pc">
+              <div class="profile__header vin-reports__header">
+                <h2 class="profile__title vin-reports__title">
+                  Vin reports
+                </h2>
+              </div>
+
+              <div class="vin-reports__search">
+                <label class="vin-reports__label" for="#">
+                  <input class="vin-reports__input" type="search" placeholder="Search report">
+                  <button class="vin-reports__btn">
+                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.8187 14.0625L12.607 11.3156C13.5516 10.0945 14.0625 8.60156 14.0625 7.03125C14.0625 5.15156 13.3289 3.38906 12.0023 2.06016C10.6758 0.73125 8.90859 0 7.03125 0C5.15391 0 3.38672 0.733594 2.06016 2.06016C0.73125 3.38672 0 5.15156 0 7.03125C0 8.90859 0.733594 10.6758 2.06016 12.0023C3.38672 13.3312 5.15156 14.0625 7.03125 14.0625C8.60156 14.0625 10.0922 13.5516 11.3133 12.6094L14.5249 15.3539C14.5428 15.3718 14.564 15.3859 14.5873 15.3956C14.6106 15.4053 14.6356 15.4102 14.6609 15.4102C14.6861 15.4102 14.7111 15.4053 14.7344 15.3956C14.7578 15.3859 14.7789 15.3718 14.7968 15.3539L15.8187 14.3344C15.8365 14.3165 15.8507 14.2953 15.8604 14.272C15.87 14.2487 15.875 14.2237 15.875 14.1984C15.875 14.1732 15.87 14.1482 15.8604 14.1249C15.8507 14.1015 15.8365 14.0803 15.8187 14.0625ZM10.7438 10.7438C9.75 11.7352 8.43281 12.2812 7.03125 12.2812C5.62969 12.2812 4.3125 11.7352 3.31875 10.7438C2.32734 9.75 1.78125 8.43281 1.78125 7.03125C1.78125 5.62969 2.32734 4.31016 3.31875 3.31875C4.3125 2.32734 5.62969 1.78125 7.03125 1.78125C8.43281 1.78125 9.75234 2.325 10.7438 3.31875C11.7352 4.3125 12.2812 5.62969 12.2812 7.03125C12.2812 8.43281 11.7352 9.75234 10.7438 10.7438Z"
+                        fill="#999999" />
+                    </svg>
+
+                  </button>
+                </label>
+
+                <div class="vin-reports__table">
+
+                  <div class="vin-reports__field field">
+                    <div class="field__label">Vin</div>
+                    <div class="field__item">WBAFU7C54BC771770</div>
+                  </div>
+
+                  <div class="vin-reports__field field">
+                    <div class="field__label">Date</div>
+                    <div class="field__item">2018/08/01</div>
+                  </div>
+
+                  <div class="vin-reports__field field">
+                    <div class="field__label">Report</div>
+                    <div class="field__item">MyReport</div>
+                  </div>
+
+                  <div class="vin-reports__field field">
+                    <div class="field__label">Status</div>
+                    <div class="field__item"><a href="#">Download</a></div>
+                  </div>
+
+                </div>
+
+                <button class="profile__btn vin-reports__submit-btn" type="submit">
+                  Next step
+                  <span class="btn-span"></span>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top__wrapper">
+          <p class="footer-top__text">Low Prices, No Haggling</p>
+          <p class="footer-top__text">Largest Car Dealership</p>
+          <p class="footer-top__text">Multipoint Safety Check</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-center">
+      <div class="container container--footer">
+        <ul class="footer-center__list">
+          <li class="footer-center__item">
+            <h3 class="footer-center__title">LATEST AUTOS</h3>
+            <ul class="footer-center__list-list">
+              <li class="footer-center__item-item">
+                <img class="footer-center__item-img" src="images/slider/1.jpg" alt="фото машины">
+                <div class="footer-center__item-wrapper">
+                  <a class="footer-center__item-text" href="#">
+                    MERCEDES-AMG GT S
+                  </a>
+                  <p class="footer-center__item-speed">
+                    35,000 KM
+                  </p>
+                </div>
+              </li>
+              <li class="footer-center__item-item">
+                <img class="footer-center__item-img" src="images/slider/1.jpg" alt="фото машины">
+                <div class="footer-center__item-wrapper">
+                  <a class="footer-center__item-text" href="#">
+                    AUDI R8 SPYDER V-8
+                  </a>
+                  <p class="footer-center__item-speed">
+                    35,000 KM
+                  </p>
+                </div>
+              </li>
+              <li class="footer-center__item-item footer-center__item-item--last">
+                <img class="footer-center__item-img" src="images/slider/2.jpg" alt="фото машины">
+                <div class="footer-center__item-wrapper">
+                  <a class="footer-center__item-text" href="#">
+                    ASTON MARTIN VANTAGE
+                  </a>
+                  <p class="footer-center__item-speed">
+                    35,000 KM
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-center__item">
+            <h3 class="footer-center__title">FROM TWITTER</h3>
+            <ul class="footer-center__list-list">
+              <li class="footer-center__item-item2">
+                <p class="footer-center__item-twitter-text">Duis scelerisque aliquet ante donec libero
+                  pede porttitor
+                  dacu
+                </p>
+                <p class="footer-center__item-twitter-time">20 minutes ago</p>
+              </li>
+              <li class="footer-center__item-item2">
+                <p class="footer-center__item-twitter-text">Duis scelerisque aliquet ante donec libero
+                  pede
+                  porttitor dacu
+                </p>
+                <p class="footer-center__item-twitter-time">20 minutes ago</p>
+              </li>
+              <li class="footer-center__item-item2 footer-center__item-item2--last">
+                <p class="footer-center__item-twitter-text">Duis scelerisque aliquet ante donec
+                  libero pede porttitor dacu
+                </p>
+                <p class="footer-center__item-twitter-time">20 minutes ago</p>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-center__item footer-center__item--big">
+            <h3 class="footer-center__title">CONTACT US</h3>
+            <p class="footer-center__item-info footer-center__item-info1">
+              202 W 7th St, Suite 233 Los Angeles, California 90014 USA</p>
+            <a class="footer-center__item-info footer-center__item-info2" href="#">
+              Phone: 1-800- 624-5462</a>
+            <p class="footer-center__item-info footer-center__item-info3">
+              FAX: 1-800- 624-5462</p>
+            <a class="footer-center__item-info footer-center__item-info4" href="#">
+              Email: info@domain.com
+            </a>
+            <img class="footer-center__item-info-img" src="images/slider/1.jpg" alt="фото">
+          </li>
+        </ul>
+      </div>
+      <div class="container container--footer">
+        <aside class="footer-aside">
+          <div class="footer-aside__wrapper">
+            <ul class="footer-aside__list">
+              <li class="footer-aside__item">
+                <p class="footer-aside__item-title">OPENING HOURS</p>
+                <p class="footer-aside__item-subtitle">Sales Department</p>
+                <p class="footer-aside__item-text">Mon-Sat : 8:00am - 5:00pm
+                  <br>
+                  Sunday is closed
+                </p>
+                <p class="footer-aside__item-subtitle">Service Department</p>
+                <p class="footer-aside__item-text">Mon-Sat : 8:00am - 5:00pm
+                  <br>
+                  Sunday is closed
+                </p>
+              </li>
+              <li class="footer-aside__item">
+                <p class="footer-aside__item-title">ABOUT US</p>
+                <p class="footer-aside__item-text">
+                  Vestibulum varius od lio eget conseq uat blandit, lorem auglue comm lodo nisl non
+                  ultricies lectus
+                  nibh
+                  mas lsa Duis scelerisque aliquet. Ante donec libero pede porttitor dacu msan esct
+                  venenatis quis.
+                </p>
+                <div class="footer-aside__item-wrap">
+                  <a href="#" class="footer-aside__item-link">Read more</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__wrapper">
+          <div class="footer-bottom__left">
+            <a href="#" class="logo">
+              <img src="images/logo/logoF.png" alt="логотип" class="logo__img">
+              <div class="logo__list">
+                <strong class="logo__strong logo__strong--auto">auto</strong>
+                <strong class="logo__strong logo__strong--club">CluB</strong>
+              </div>
+            </a>
+          </div>
+          <div class="footer-bottom__right">
+            <div class="footer-bottom__right-list-soc">
+              <a href="#" class="footer-bottom__right-link">
+                <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="facebook">
+              </a>
+              <a href="#" class="footer-bottom__right-link">
+                <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="twitter">
+              </a>
+              <a href="#" class="footer-bottom__right-link">
+                <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="google">
+              </a>
+              <a href="#" class="footer-bottom__right-link">
+                <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="instagram">
+              </a>
+              <a href="#" class="footer-bottom__right-link">
+                <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="youtube">
+              </a>
+              <a href="#" class="footer-bottom__right-link">
+                <img class="footer-bottom__right-img" src="svg/vehicle/key.svg" alt="skype">
+              </a>
+            </div>
+            <nav class="footer-bottom__right-list">
+              <a href="#" class="footer-bottom__right-text">
+                Home
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                Pages
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                Inventory
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                About
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                Services
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                Blog
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                Shop
+              </a>
+              <a href="#" class="footer-bottom__right-text">
+                Contact
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+
+  &--footer {
+    position: relative;
+  }
+}
+
+.body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  border-left: 4px solid #228dcb;
+  border-right: 4px solid #228dcb;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  color: #525252;
+
+  &--before {
+    position: relative;
+
+    &::before {
+      content: "EVERYTHING YOU NEED TO KNOW";
+      position: absolute;
+      top: -30px;
+      left: 0;
+      background-color: #555;
+      color: #fff;
+      font-weight: 700;
+      padding: 3px;
+      font-size: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      width: 197px;
+      height: 21px;
+    }
+  }
+
+  &--before2 {
+    position: relative;
+
+    &::before {
+      content: "GIVING OUR CUSTOMERS BEST DEALS";
+      position: absolute;
+      top: -30px;
+      left: 0;
+      background-color: #555;
+      color: #fff;
+      font-weight: 700;
+      padding: 3px;
+      font-size: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      width: 217px;
+      height: 21px;
+    }
+  }
+
+  &--before3 {
+    color: #fff;
+    border-color: #fff;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 30px;
+    width: 100%;
+    max-width: 234px;
+
+    &::before {
+      content: "LATEST NEWS & DEALS";
+      position: absolute;
+      top: -30px;
+      left: 0;
+      background-color: #228dcb;
+      color: #fff;
+      font-weight: 700;
+      padding: 3px;
+      font-size: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      width: 134px;
+      height: 21px;
+    }
+  }
+}
+
+.to-top {
+  background-color: rgba(0, 0, 0, 0.6);
+  // display: none;
+  padding: 15px;
+  color: #fff;
+  position: fixed;
+  z-index: 9999;
+  border-radius: 3px;
+  width: 44px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 10px;
+    height: 3px;
+    position: absolute;
+    background-color: #fff;
+    top: 25px;
+    left: 0;
+    transform: translateY(-50%);
+    left: 14px;
+    transform: rotate(135deg);
+  }
+
+  &::before {
+    left: 20px;
+    transform: rotate(225deg);
+  }
+}
+
+@media (max-width:680px){
+  .title{
+    &--before3{
+      margin: 0;
+      margin-bottom: 25px;
+    }
+  }
+}

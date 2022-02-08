@@ -1,0 +1,501 @@
+@import "reset";
+@import "vars";
+@import "global";
+@import "plugins";
+@import "components/_header.scss";
+@import "home-main/_home.scss";
+@import "listings-Two/_listings-Two.scss";
+@import "components/_footer.scss";
+
+
+
+.payment {
+
+  display: flex;
+
+  &__container {
+    display: flex;
+  }
+
+  &__wrapper {
+    width: 65%;
+  }
+
+  &__top {
+    padding: 30px 40px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(../images/backgrounds/blue.png) -90px center no-repeat;
+    background-color: #2475ce;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__top-btn {
+    padding: 7px 10px;
+    background-color: #2475ce;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  &__top-text {
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  &__bottom {
+
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+  }
+
+  &__bottom-left {
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 30px;
+    position: relative;
+  }
+
+  &__bottom-right-price strong {
+    margin-left: 5px;
+    color: #2475ce;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #2475ce;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    right: 0;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 700;
+    padding-right: 45px;
+    font-size: 13px;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    justify-content: center;
+    margin-top: 20px;
+  } 
+}
+
+@media (max-width: 1189px) {
+
+  .payment {
+    &__input-wrapper {
+      display: block;
+    }
+
+    &__input-wrapper-left {
+      margin-right: 0 !important;
+    }
+
+    &__input-date,
+    &__input-cvv2 {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .payment {
+
+    &__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+
+
+  .payment {
+    // display: none;
+
+    &__content-left {
+      display: none;
+    }
+
+    &__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+
+.profile {
+
+  &__content {
+    display: flex;
+  }
+
+  &__content-left {
+    width: 30%;
+    margin-right: 50px;
+  }
+
+  &__list {
+    display: block;
+    border-bottom: 7px solid #555;
+  }
+
+  &__list-item.active-item {
+    background: #444;
+    border-color: #444;
+  }
+
+  &__list-item {
+    padding: 25px 0 25px 25px;
+    border-bottom: 1px solid #555;
+    background: linear-gradient(to bottom, #737373 0%,#656565 100%);
+  }
+
+  .list-item-wrap.active-item-wrap {
+    background-color: #228dcb;
+    fill: #228dcb;
+  }
+
+  .list-item-wrap {
+    display: flex;
+    align-items: center;
+
+    padding: 20px 10px 15px 20px;
+    background: #444;
+    position: relative;
+    height: 70px;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-left: 30px solid #228dcb;
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    // z-index: 10;
+  }
+
+  .list-item-title {
+    margin: 0 0 3px 0;
+    padding-left: 5px;
+    border-left: 4px solid #228dcb;
+    text-transform: uppercase;
+    line-height: 1;
+
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;  
+
+    color: #fff;
+    fill: #fff;
+  }
+
+  .list-item-text {
+
+    font-weight: 600;
+    font-size: 11px;
+    font-family: 'Open Sans',sans-serif;  
+    margin: 0;
+    color: #b4b4b4;
+  }
+  &__list-item.active-item .list-item-title {
+    border-left-color: #fff;
+  }
+
+  &__list-item.active-item .list-item-text {
+    color: #fff;
+  }
+
+  .list-item-img {
+    margin-right: 15px;
+  }
+
+  &__content-right {
+    width: 60%;
+  }
+
+
+  &__header {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+    text-align: left;
+    border-bottom: 1px solid #B4B4B4;
+    position: relative;
+  }
+
+  &__header::after {
+    content: '';
+    background: url(../images/elements/chevron-down.png) center no-repeat;
+    width: 15px;
+    left: 5%;
+    height: 7px;
+    position: absolute;
+    top: 100%;
+    display: block;
+  }
+
+  &__title {
+    margin: 0;
+    padding-left: 10px;
+
+    border-left: 4px solid #228dcb;
+    text-transform: none;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: #212121;
+  }
+
+  &__form {
+    margin-bottom: 30px;
+  }
+
+  &__form-label {
+    display: block;
+    margin: 0 0 15px 15px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+
+    color: #999;
+
+  }
+
+  &__form-input {
+    display: block;
+    width: 75%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+
+    border: 1px solid #eeeeee;
+    color: #444;
+    background: #f7f7f7 !important;
+    text-transform: none;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height: 46px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-top: 35px;
+    width: 26%;
+    display: flex;
+    padding: 10px 5px 10px 25px;
+    font: 700 14px 'Open Sans', sans-serif;
+    border-radius: 30px;
+
+    border: 1px solid transparent;
+    background-color: #228dcb;
+    color: #fff;
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    align-self: flex-end;
+    transition: all .3s ease;
+  }
+
+  &__btn:hover {
+    background-color: #555;
+  }
+
+  &__btn span {
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 5px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    font-weight: normal;
+    margin-left: 0px;
+    margin-right: 10px;
+    background-color: #555;
+    transition: all .3s ease;
+  }
+
+  &__btn:hover span {
+    background-color: #228dcb;
+  }
+
+  &__btn span::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    bottom: 0;
+    left: 8px;
+    right: 0px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 991px) {
+
+
+  .profile {
+    // display: none;
+
+    &__content-left {
+      display: none;
+    }
+
+    &__content-right {
+      width: 100%;
+    }
+  }
+}
+
+
+.vin-reports {
+
+
+  &__search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  &__input {
+    border: 1px solid #cacaca;
+    width: 100%;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+  }
+
+  &__label {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    padding: 5px;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all .3s ease;
+  }
+
+  &__btn:hover {
+    background-color: #444;
+    border-color: #444;
+  }
+
+  &__submit-btn {
+    margin-top: 70px;
+  }
+
+  &__table {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+  }
+
+  .field {
+    width: 20%;
+  }
+
+  .field:nth-child(1) {
+    width: 40%;
+  }
+
+  .field__label {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+  }
+
+  .field__item {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .field__item a {
+    text-decoration: underline;
+    color: #228dcb;
+  }
+
+
+}
+
+@media (max-width: 991px) {
+
+
+  .vin-reports {
+    // display: none;
+
+    &__content-left {
+      display: none;
+    }
+
+    &__content-right {
+      width: 100%;
+    }
+  }
+}

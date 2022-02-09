@@ -1,6 +1,6 @@
 //  ещё чекбоксы
 
-document.querySelector('.payment__top-chekbox1').addEventListener('click', chek3);
+document.querySelector('.payment__top-checbox1').addEventListener('click', chek3);
 
 let c = 0;
 let d = 0;
@@ -36,7 +36,7 @@ function chek3() {
 }
 
 
-document.querySelector('.payment__top-chekbox2').addEventListener('click', chek4);
+document.querySelector('.payment__top-checbox2').addEventListener('click', chek4);
 
 function chek4() {
   if (d == 0 && c == 1) {

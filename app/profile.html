@@ -220,19 +220,9 @@
             <ul class="profile__list">
 
 
-              <li class="profile__list-item active-item">
-                <div class="list-item-wrap active-item-wrap">
-                  <div class="list-item-img">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
-                        fill="white" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
-                        fill="white" />
-                    </svg>
+              <li class="profile__list-item active-item vin-reports__list-item">
+                <div class="list-item-wrap active-item-wrap profile-svg">
 
-                  </div>
                   <div class="list-item-descr">
                     <h4 class="list-item-title">
                       Profile
@@ -246,19 +236,9 @@
               </li>
 
 
-              <li class="profile__list-item">
-                <div class="list-item-wrap">
-                  <div class="list-item-img">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
-                        fill="white" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
-                        fill="white" />
-                    </svg>
+              <li class="profile__list-item vin-reports__list-item">
+                <div class="list-item-wrap vin-reports-svg">
 
-                  </div>
                   <div class="list-item-descr">
                     <h4 class="list-item-title">
                       Vin reports
@@ -271,19 +251,9 @@
               </li>
 
 
-              <li class="profile__list-item">
-                <div class="list-item-wrap">
-                  <div class="list-item-img">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
-                        fill="white" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
-                        fill="white" />
-                    </svg>
+              <li class="profile__list-item vin-reports__list-item">
+                <div class="list-item-wrap about-vin-svg">
 
-                  </div>
                   <div class="list-item-descr">
                     <h4 class="list-item-title">
                       About vin
@@ -329,10 +299,10 @@
                 <input class="profile__form-input" id="form-email" name="email" type="email"
                   placeholder="Enter your email">
 
-                  <button class="profile__btn" type="submit">
-                    Next step
-                    <span class="btn-span"></span>
-                  </button>
+                <button class="profile__btn" type="submit">
+                  Next step
+                  <span class="btn-span"></span>
+                </button>
               </form>
             </div>
 
@@ -368,10 +338,10 @@
                 <input class="profile__form-input" id="form-new-password-2" name="password" type="password"
                   placeholder="Repeat your new-password">
 
-                  <button class="profile__btn" type="submit">
-                    Update
-                    <span class="btn-span"></span>
-                  </button>
+                <button class="profile__btn" type="submit">
+                  Update
+                  <span class="btn-span"></span>
+                </button>
               </form>
             </div>
 
@@ -385,18 +355,25 @@
 
               <form class="profile__form" action="#">
 
+                <button class="profile__btn" type="button" id="send-btn" onclick="sendCode();">
+                  Send code
+                  <span class="btn-span"></span>
+                </button>
 
-                <label class="profile__form-label" for="form-new-email">
-                  Enter your new-email
-                  <span>*</span>
-                </label>
-                <input class="profile__form-input" id="form-new-email" name="email" type="email"
-                  placeholder="Enter your new-email">
+                <div class="profile__hidden" id="hide">
+                  <label class="profile__form-label" for="form-code">
+                    Enter your verification code
+                    <span>*</span>
+                  </label>
+                  <input class="profile__form-input" id="form-code" name="text" type="text"
+                    placeholder="Enter your verification code">
 
                   <button class="profile__btn" type="submit">
                     Submit
                     <span class="btn-span"></span>
                   </button>
+                </div>
+
               </form>
             </div>
 
@@ -599,6 +576,8 @@
     </div>
   </footer>
 
+
+  <script src="js/new-email.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
